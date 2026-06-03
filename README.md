@@ -1,6 +1,6 @@
 ## Project Goal
 
-My Personal Portfolio website using FastAPI as a project for learning Full Stack AI Engineering concept
+Personal portfolio documenting my journey from self-taught full stack developer to full stack AI engineer while learning production-grade software engineering.
 
 ## Tech Stack
 
