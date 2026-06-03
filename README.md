@@ -1,4 +1,4 @@
-## Project Goal
+### Project Goal
 
 Personal portfolio documenting my journey from self-taught full stack developer to full stack AI engineer while learning production-grade software engineering.
 
@@ -17,13 +17,13 @@ Personal portfolio documenting my journey from self-taught full stack developer 
 
 ## Features
 
--- Portfolio
--- Blog
--- Project
--- Contact Form
--- Admin Panel
--- CMS
--- AI Chatbot
+- Portfolio
+- Blog
+- Project
+- Contact Form
+- Admin Panel
+- CMS
+- AI Chatbot
 
 ## Roadmap
 
