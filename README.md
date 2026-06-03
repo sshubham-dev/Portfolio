@@ -1,8 +1,8 @@
-### Project Goal
+# Project Goal
 
 Personal portfolio documenting my journey from self-taught full stack developer to full stack AI engineer while learning production-grade software engineering.
 
-## Tech Stack
+# Tech Stack
 
 1. Frontend:
 - HTML
@@ -15,7 +15,7 @@ Personal portfolio documenting my journey from self-taught full stack developer 
 3. Database:
 - Mongodb
 
-## Features
+# Features
 
 - Portfolio
 - Blog
@@ -25,7 +25,7 @@ Personal portfolio documenting my journey from self-taught full stack developer 
 - CMS
 - AI Chatbot
 
-## Roadmap
+# Roadmap
 
 1. Portfolio v1.0 - FastAPI as backend and Pure HTML, CSS, JS and basic feature.
 2. Portfolio v2.0 - FastAPI as backend and Nextjs or any as per industry as frontend with more advance concepts.

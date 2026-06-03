@@ -1,6 +1,6 @@
-### Schema Design
+# Schema Design
 
-# 1. Project
+### 1. Project
 - title
 - description
 - stack
@@ -14,7 +14,7 @@
 - createdAt
 - updatedAt
 
-# 2. Blog
+### 2. Blog
 - title
 - slug
 - coverImage
@@ -28,7 +28,7 @@
 - createdAt
 - updatedAt
 
-# 3. Contact
+### 3. Contact
 - name
 - email
 - whatsapp
