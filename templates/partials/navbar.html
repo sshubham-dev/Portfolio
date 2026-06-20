@@ -1,0 +1,48 @@
+<!-- Top Navigation -->
+<header
+  class="w-full top-0 sticky z-50 bg-surface border-b border-outline-variant flat no shadows transition-all duration-300"
+  id="main-nav"
+>
+  <div
+    class="max-w-container-max mx-auto px-gutter flex justify-between items-center h-16"
+  >
+    <div
+      class="font-code-md text-code-md font-bold text-primary dark:text-primary"
+    >
+      <a
+        href="/"
+        class="hover:text-primary-container transition-colors duration-200 cursor-pointer uppercase tracking-wider"
+      >
+        Shubham_Kumar
+      </a>
+    </div>
+    <nav class="hidden md:flex items-center gap-xl">
+      {% set pages = [ {"name": "home", "path": "/", "icon":"🏡"}, {"name":
+      "about", "path": "/about", "icon":"ℹ️"}, {"name": "products", "path":
+      "/products", "icon":"🚀", "category": ["Custom Software", "Web Apps",
+      "Mobile Apps", "AI Solutions"]}, {"name": "blogs", "path": "/blogs",
+      "icon":"📃", "category": ["Tech", "Product Case-Study", "Custom Software",
+      "Web Apps", "Mobile Apps", "AI Solutions"]}, {"name": "contact", "path":
+      "/contact", "icon":"📞"} ] %} {% for page in pages %}
+      <a
+        class="{% if current_page == page.name %} font-label-sm text-label-sm text-primary font-bold border-b-2 border-primary pb-1 {% else %} font-label-sm text-label-sm text-on-surface-variant font-medium hover:text-primary transition-colors duration-200 {% endif %} uppercase tracking-wider"
+        href="{{page.path}}"
+      >
+        {{ page.name }} {{ page.icon }}
+      </a>
+      {% endfor %}
+    </nav>
+    <a
+      href="/hire-me"
+      class="hidden md:block bg-primary-container text-on-primary-container px-md py-sm rounded hover:bg-primary transition-all active:scale-95 font-label-sm text-label-sm uppercase tracking-wider"
+    >
+      Hire Me
+    </a>
+    <button
+      id="mobile-menu-open"
+      class="md:hidden flex items-center justify-center w-10 h-10 text-primary"
+    >
+      <span class="material-symbols-outlined">menu</span>
+    </button>
+  </div>
+</header>

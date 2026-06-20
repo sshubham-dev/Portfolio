@@ -1,0 +1,321 @@
+{% extends 'base.html' %} {% block content %}
+<main>
+  <!-- Hero Section -->
+  <section
+    class="relative min-h-[819px] flex flex-col items-center justify-center text-center px-gutter overflow-hidden terminal-glow"
+  >
+    <div class="absolute inset-0 scanline opacity-20"></div>
+    <!-- Terminal Component Style Intro -->
+    <div
+      class="max-w-3xl w-full bg-surface-container border border-outline-variant rounded-xl p-md mb-xl relative shadow-2xl"
+    >
+      <div class="flex gap-2 mb-md">
+        <div class="w-3 h-3 rounded-full bg-error"></div>
+        <div class="w-3 h-3 rounded-full bg-tertiary"></div>
+        <div class="w-3 h-3 rounded-full bg-primary"></div>
+      </div>
+      <div class="text-left font-code-md text-code-md space-y-2">
+        <p class="text-on-surface-variant">
+          <span class="text-primary">&gt;</span> system.init()
+        </p>
+        <p class="text-on-surface-variant">
+          <span class="text-primary">&gt;</span> status: online
+        </p>
+        <p class="text-on-surface-variant">
+          <span class="text-primary">&gt;</span> task: building_intelligence
+        </p>
+      </div>
+    </div>
+    <h1
+      class="font-headline-xl text-headline-xl md:text-headline-xl mb-md max-w-4xl"
+    >
+      Building the Intelligence of <span class="text-primary">Tomorrow</span>
+    </h1>
+    <p
+      class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-xl"
+    >
+      {{name}} Full Stack AI Engineer solving complex business operations with neural
+      logic and scalable cloud infrastructure.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-md">
+      <button
+        class="bg-primary text-on-primary font-label-sm text-label-sm px-xl py-md rounded-lg font-bold uppercase tracking-widest hover:bg-primary-fixed-dim transition-all"
+      >
+        Initiate Project
+      </button>
+      <button
+        class="border border-outline text-on-surface font-label-sm text-label-sm px-xl py-md rounded-lg font-bold uppercase tracking-widest hover:border-primary hover:text-primary transition-all"
+      >
+        View Documentation
+      </button>
+    </div>
+  </section>
+  <!-- Services Section (What you can get) -->
+  <section class="max-w-container-max mx-auto px-gutter py-xl">
+    <div class="flex items-center gap-md mb-xl">
+      <span class="font-code-md text-code-md text-primary">01 // SERVICES</span>
+      <div class="h-px bg-outline-variant flex-grow"></div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-lg">
+      <!-- Service 1 -->
+      <div
+        class="bg-surface-container border border-outline-variant p-xl hover:border-primary transition-all group"
+      >
+        <div
+          class="w-12 h-12 bg-surface-container-high rounded-lg flex items-center justify-center mb-lg border border-outline-variant group-hover:border-primary transition-all"
+        >
+          <span
+            class="material-symbols-outlined text-primary"
+            data-icon="automation"
+            >automation</span
+          >
+        </div>
+        <h3 class="font-headline-md text-headline-md mb-md">
+          Business Process Automation
+        </h3>
+        <p class="text-on-surface-variant font-body-md mb-lg">
+          Streamline operations using intelligent agents that learn your
+          workflows and eliminate repetitive manual tasks.
+        </p>
+        <span
+          class="font-code-md text-code-md text-primary opacity-0 group-hover:opacity-100 transition-opacity"
+          >Deploy -&gt;</span
+        >
+      </div>
+      <!-- Service 2 -->
+      <div
+        class="bg-surface-container border border-outline-variant p-xl hover:border-primary transition-all group"
+      >
+        <div
+          class="w-12 h-12 bg-surface-container-high rounded-lg flex items-center justify-center mb-lg border border-outline-variant group-hover:border-primary transition-all"
+        >
+          <span
+            class="material-symbols-outlined text-primary"
+            data-icon="neurology"
+            data-weight="fill"
+            >neurology</span
+          >
+        </div>
+        <h3 class="font-headline-md text-headline-md mb-md">
+          Custom LLM Integration
+        </h3>
+        <p class="text-on-surface-variant font-body-md mb-lg">
+          Fine-tuned Large Language Models specialized for your industry's data,
+          ensuring security and maximum relevance.
+        </p>
+        <span
+          class="font-code-md text-code-md text-primary opacity-0 group-hover:opacity-100 transition-opacity"
+          >Execute -&gt;</span
+        >
+      </div>
+      <!-- Service 3 -->
+      <div
+        class="bg-surface-container border border-outline-variant p-xl hover:border-primary transition-all group"
+      >
+        <div
+          class="w-12 h-12 bg-surface-container-high rounded-lg flex items-center justify-center mb-lg border border-outline-variant group-hover:border-primary transition-all"
+        >
+          <span
+            class="material-symbols-outlined text-primary"
+            data-icon="cloud_done"
+            >cloud_done</span
+          >
+        </div>
+        <h3 class="font-headline-md text-headline-md mb-md">
+          Scalable Cloud Architecture
+        </h3>
+        <p class="text-on-surface-variant font-body-md mb-lg">
+          High-availability backends designed to handle massive inference loads
+          with sub-millisecond latency.
+        </p>
+        <span
+          class="font-code-md text-code-md text-primary opacity-0 group-hover:opacity-100 transition-opacity"
+          >Scale -&gt;</span
+        >
+      </div>
+    </div>
+  </section>
+  <!-- Projects Section -->
+  <section class="bg-surface-container-low py-xl">
+    <div class="max-w-container-max mx-auto px-gutter">
+      <div class="flex items-center gap-md mb-xl justify-end text-right">
+        <div class="h-px bg-outline-variant flex-grow"></div>
+        <span class="font-code-md text-code-md text-primary"
+          >02 // DEPLOYED_WORK</span
+        >
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-xl">
+        <!-- Featured Project 1 -->
+        <div
+          class="flex flex-col md:flex-row bg-surface-container border border-outline-variant overflow-hidden hover:border-primary-container transition-colors"
+        >
+          <div class="md:w-1/2 aspect-video overflow-hidden">
+            <img
+              alt="Project Preview"
+              class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+              data-alt="A high-tech server room interior glowing with cyan and blue LED lights reflecting off sleek glass and metal surfaces. The scene is futuristic and professional, capturing the essence of a high-performance data center. Soft atmospheric smoke drifts through the laser-straight server aisles, creating a cinematic, tech-heavy atmosphere dominated by cold blue tones."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDviKfVvFSGe0bnCCM7bqygBxRZo827j7P3IGQADMR9Q5k8YbOjL1vGQ0nyyglx9tER-NLvNDfYHZ8b1o7kZQMqTHTRbCxuK3ftFBtGmnzct1vGTDdpmOGnR4eKR4TaeR1aGaZEqiMAEC5huGbXjOoYISCllxLfSPd8cUJfbI4WX3ZOaFw4qxNVhqSraAto-yrvy7Yw58fTbGlJbtvh2Z2diSzaeKTwCcaYnbAKcVD0bCtoW9gzC2XGmlYcL-LYIcqNFIH-HnXHauk"
+            />
+          </div>
+          <div class="md:w-1/2 p-lg flex flex-col justify-between">
+            <div>
+              <div class="flex gap-xs mb-md">
+                <span
+                  class="bg-surface-container-highest text-primary font-code-md text-[10px] px-xs py-[2px] border border-primary/20"
+                  >V1.0</span
+                >
+                <span
+                  class="bg-surface-container-highest text-secondary font-code-md text-[10px] px-xs py-[2px] border border-secondary/20"
+                  >STABLE</span
+                >
+              </div>
+              <h4 class="font-headline-md text-headline-md mb-sm">
+                Neural Supply Chain
+              </h4>
+              <p class="text-on-surface-variant font-body-md mb-md">
+                Predictive analytics engine for global logistics using
+                custom-trained LSTM models.
+              </p>
+            </div>
+            <div class="flex gap-sm">
+              <span class="font-label-sm text-label-sm text-primary"
+                >PyTorch</span
+              >
+              <span class="font-label-sm text-label-sm text-primary"
+                >FastAPI</span
+              >
+              <span class="font-label-sm text-label-sm text-primary"
+                >React</span
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Featured Project 2 -->
+        <div
+          class="flex flex-col md:flex-row bg-surface-container border border-outline-variant overflow-hidden hover:border-primary-container transition-colors"
+        >
+          <div class="md:w-1/2 aspect-video overflow-hidden">
+            <img
+              alt="Project Preview"
+              class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+              data-alt="Abstract digital representation of a neural network with glowing Cyber Cyan nodes connected by intricate light-speed data filaments. The background is a deep slate black, emphasizing the vibrant neon blue connections. The composition is modern and technical, suggesting high-speed artificial intelligence processing in a clean, minimalist digital void."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5Dvq97yqgRSnSLCe5QlyseeULKc5soq07OFpGI_f8yT3UNw1DDS3ebSJ6wEv-hG0DbWpmukNgYArgPrJU-NKI49ZMuzUPqXv_58KqagUo9CkqiTd-Ge6ocw1nVcE0I-n2CQWvj0IB1fyZaMigP5JAT13O1vp6XDsdcp-yyOWTyAultYBm3PDh3WVXjn1GKC6d0eLkNcFZduwO7EaX9RdY3rJTgnzxKSTmoGet67jsMtYwFI9mKGGJ81Zw6YvNCe24NMzTvnA8TK0"
+            />
+          </div>
+          <div class="md:w-1/2 p-lg flex flex-col justify-between">
+            <div>
+              <div class="flex gap-xs mb-md">
+                <span
+                  class="bg-surface-container-highest text-primary font-code-md text-[10px] px-xs py-[2px] border border-primary/20"
+                  >BETA</span
+                >
+                <span
+                  class="bg-surface-container-highest text-secondary font-code-md text-[10px] px-xs py-[2px] border border-secondary/20"
+                  >ACTIVE</span
+                >
+              </div>
+              <h4 class="font-headline-md text-headline-md mb-sm">
+                CodeSentinel AI
+              </h4>
+              <p class="text-on-surface-variant font-body-md mb-md">
+                Automated security audit agent using LLM-based pattern
+                recognition for zero-day detection.
+              </p>
+            </div>
+            <div class="flex gap-sm">
+              <span class="font-label-sm text-label-sm text-primary"
+                >LangChain</span
+              >
+              <span class="font-label-sm text-label-sm text-primary">AWS</span>
+              <span class="font-label-sm text-label-sm text-primary"
+                >Node.js</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Tech Stack Section -->
+  <section class="max-w-container-max mx-auto px-gutter py-xl">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-xl">
+      <div class="max-w-md">
+        <span class="font-code-md text-code-md text-primary block mb-sm"
+          >03 // TECH_STACK</span
+        >
+        <h2 class="font-headline-lg text-headline-lg mb-md">
+          Engineered for Performance.
+        </h2>
+        <p class="text-on-surface-variant font-body-md">
+          My arsenal consists of the most powerful tools in the AI and Web
+          ecosystems, constantly updated via continuous learning cycles.
+        </p>
+      </div>
+      <div class="flex flex-wrap gap-md justify-center md:justify-end max-w-xl">
+        <span
+          class="font-code-md text-code-md px-md py-sm border border-outline text-secondary hover:border-primary hover:text-primary transition-all"
+          >Python</span
+        >
+        <span
+          class="font-code-md text-code-md px-md py-sm border border-outline text-secondary hover:border-primary hover:text-primary transition-all"
+          >PyTorch</span
+        >
+        <span
+          class="font-code-md text-code-md px-md py-sm border border-outline text-secondary hover:border-primary hover:text-primary transition-all"
+          >TensorFlow</span
+        >
+        <span
+          class="font-code-md text-code-md px-md py-sm border border-outline text-secondary hover:border-primary hover:text-primary transition-all"
+          >React</span
+        >
+        <span
+          class="font-code-md text-code-md px-md py-sm border border-outline text-secondary hover:border-primary hover:text-primary transition-all"
+          >Node.js</span
+        >
+        <span
+          class="font-code-md text-code-md px-md py-sm border border-outline text-secondary hover:border-primary hover:text-primary transition-all"
+          >AWS</span
+        >
+        <span
+          class="font-code-md text-code-md px-md py-sm border border-outline text-secondary hover:border-primary hover:text-primary transition-all"
+          >Kubernetes</span
+        >
+        <span
+          class="font-code-md text-code-md px-md py-sm border border-outline text-secondary hover:border-primary hover:text-primary transition-all"
+          >PostgreSQL</span
+        >
+        <span
+          class="font-code-md text-code-md px-md py-sm border border-outline text-secondary hover:border-primary hover:text-primary transition-all"
+          >Rust</span
+        >
+        <span
+          class="font-code-md text-code-md px-md py-sm border border-outline text-secondary hover:border-primary hover:text-primary transition-all"
+          >Docker</span
+        >
+      </div>
+    </div>
+  </section>
+  <!-- CTA Section -->
+  <section class="max-w-container-max mx-auto px-gutter py-xl mb-xl">
+    <div
+      class="bg-primary-container rounded-xl p-xl md:p-48 text-center relative overflow-hidden group"
+    >
+      <div
+        class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10"
+      ></div>
+      <div class="relative z-10">
+        <h2
+          class="font-headline-xl text-headline-xl text-on-primary-container mb-lg"
+        >
+          Ready to scale your operations? Let's build.
+        </h2>
+        <button
+          class="bg-on-primary-container text-primary-container font-code-md text-code-md px-xl py-md rounded-lg font-bold uppercase tracking-widest hover:scale-105 transition-transform active:scale-95 shadow-xl"
+        >
+          establish_connection.sh
+        </button>
+      </div>
+    </div>
+  </section>
+</main>
+{% endblock %}

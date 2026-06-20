@@ -1,0 +1,432 @@
+{% extends "base.html" %} {% block content %}
+<main
+  class="max-w-container-max mx-auto px-gutter pt-xl space-y-xl tech-grid-bg"
+>
+  <!-- Project Hero -->
+  <section
+    class="relative border border-outline-variant bg-surface-container-low p-lg overflow-hidden"
+  >
+    <div class="scanline"></div>
+    <div
+      class="relative z-10 flex flex-col md:flex-row justify-between items-start md:items-center gap-md"
+    >
+      <div>
+        <div
+          class="inline-flex items-center gap-sm bg-primary/10 text-primary border border-primary/20 px-sm py-xs mb-sm rounded-xs"
+        >
+          <span
+            class="material-symbols-outlined text-[14px]"
+            style="font-variation-settings: &quot;FILL&quot; 1"
+            >terminal</span
+          >
+          <span class="font-code-md text-code-md uppercase tracking-widest"
+            >System Status: DEPLOYED</span
+          >
+        </div>
+        <h1 class="font-headline-xl text-headline-xl text-on-surface">
+          {{product.title}}
+        </h1>
+        <p class="font-code-md text-code-md text-primary mt-xs tracking-tight">
+          High-Throughput Distributed Inference Engine // Ver 2.4.0
+        </p>
+      </div>
+      <div class="flex flex-wrap gap-sm">
+        {% for tech in product.tags %}
+        <span
+          class="bg-surface-container-highest px-sm py-xs border border-outline-variant font-label-sm text-label-sm"
+          >{{tech}}</span
+        >
+        {% endfor %}
+      </div>
+    </div>
+    <div
+      class="mt-lg grid grid-cols-2 md:grid-cols-4 gap-gutter border-t border-outline-variant pt-lg"
+    >
+      <div>
+        <p class="font-label-sm text-label-sm text-outline uppercase">Role</p>
+        <p class="font-code-md text-code-md text-on-surface">
+          Lead AI Architect
+        </p>
+      </div>
+      <div>
+        <p class="font-label-sm text-label-sm text-outline uppercase">
+          Timeline
+        </p>
+        <p class="font-code-md text-code-md text-on-surface">
+          Q3 2023 - Present
+        </p>
+      </div>
+      <div>
+        <p class="font-label-sm text-label-sm text-outline uppercase">
+          Infrastructure
+        </p>
+        <p class="font-code-md text-code-md text-on-surface">
+          NVIDIA A100 Clusters
+        </p>
+      </div>
+      <div>
+        <p class="font-label-sm text-label-sm text-outline uppercase">
+          License
+        </p>
+        <p class="font-code-md text-code-md text-on-surface">Apache-2.0</p>
+      </div>
+    </div>
+  </section>
+  <!-- Executive Summary & Image -->
+  <section class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+    <div class="md:col-span-7 space-y-md">
+      <h2
+        class="font-headline-md text-headline-md border-l-4 border-primary pl-md"
+      >
+        Executive Summary
+      </h2>
+      <p
+        class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed"
+      >
+        The NeuralEdge Pipeline addresses the bottleneck of real-time
+        multi-modal inference in edge-computing environments. By implementing a
+        custom CUDA-optimized kernel and a dynamic load-balancing scheduler, the
+        system achieves sub-50ms latency for complex transformer architectures.
+      </p>
+      <div
+        class="bg-surface-container p-md rounded-lg border border-outline-variant"
+      >
+        <p class="font-code-md text-code-md italic text-tertiary">
+          "The primary challenge was managing asynchronous GPU memory transfers
+          without interrupting the inference cycle. Our solution leverages
+          NVIDIA's Unified Memory architecture coupled with a custom priority
+          queue."
+        </p>
+      </div>
+    </div>
+    <div
+      class="md:col-span-5 aspect-square bg-surface-container-high rounded-xl border border-outline-variant relative overflow-hidden group"
+    >
+      <img
+        class="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700"
+        data-alt="A highly detailed close-up of a futuristic glowing microchip inside a dark server environment. The chip emits intense Cyber Cyan light pulses that travel through intricate gold and silver circuitry patterns. The atmosphere is cinematic and high-tech, with subtle bokeh reflections of data points in the background, maintaining a high-contrast dark-mode aesthetic consistent with professional AI engineering portfolios."
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlyEIa3tOEY5ftGktrQL-ua2fB4jEQfEquEtuW5Ke5WUAiBLxHjokK8A8VH6tVwtUv2b_Cycm4qMoYH0sMFYf9IOp_91vd1uWYZqoatXSZZ_K3QOYtsYCczYKJgxvLEP_4Rp2V-FIL5IsGWX959vX-i5g9mNJZqCDxjklH5Toy8jlBeyAPyYkrQMAncub9wFr77a3Yn6800vmjVlxL7dUrOQiaCcHyynJLn0r36EFTqf_cw8IY1b1rOAxt-setgkLyl3rpifIUvFs"
+      />
+      <div
+        class="absolute inset-0 bg-gradient-to-t from-surface to-transparent opacity-60"
+      ></div>
+    </div>
+  </section>
+  <!-- Architecture Breakdown -->
+  <section class="space-y-lg">
+    <div class="flex justify-between items-end">
+      <h2 class="font-headline-md text-headline-md">Architecture Breakdown</h2>
+      <span class="font-code-md text-code-md text-outline"
+        >DIAGRAM_REF: ARCH_042</span
+      >
+    </div>
+    <div
+      class="bg-surface-container-lowest border border-outline-variant p-xl rounded-xl relative overflow-hidden min-h-[400px] flex items-center justify-center"
+    >
+      <!-- SVG Architecture Placeholder -->
+      <div class="w-full max-w-2xl relative">
+        <div
+          class="flex flex-col md:flex-row justify-between items-center gap-xl relative"
+        >
+          <div
+            class="z-10 bg-surface border border-primary p-md text-center w-32"
+          >
+            <span class="material-symbols-outlined text-primary mb-xs"
+              >input</span
+            >
+            <p class="font-code-md text-code-md uppercase">Ingress</p>
+          </div>
+          <div
+            class="hidden md:block h-[2px] bg-outline-variant flex-grow relative"
+          >
+            <div
+              class="absolute top-1/2 left-0 w-2 h-2 bg-primary -translate-y-1/2 rounded-full shadow-[0_0_8px_#06b6d4]"
+            ></div>
+          </div>
+          <div
+            class="z-10 bg-surface border border-outline-variant p-md text-center w-48 relative"
+          >
+            <div
+              class="absolute -top-3 left-1/2 -translate-x-1/2 bg-surface px-xs text-[10px] text-outline font-code-md"
+            >
+              PROCESSING_CORE
+            </div>
+            <span class="material-symbols-outlined text-tertiary mb-xs"
+              >memory</span
+            >
+            <p class="font-code-md text-code-md uppercase">Inference Engine</p>
+          </div>
+          <div
+            class="hidden md:block h-[2px] bg-outline-variant flex-grow"
+          ></div>
+          <div
+            class="z-10 bg-surface border border-primary p-md text-center w-32"
+          >
+            <span class="material-symbols-outlined text-primary mb-xs"
+              >output</span
+            >
+            <p class="font-code-md text-code-md uppercase">Egress</p>
+          </div>
+        </div>
+        <!-- Branching Paths -->
+        <div
+          class="absolute top-full left-1/2 -translate-x-1/2 mt-lg flex gap-xl"
+        >
+          <div
+            class="border-l-2 border-b-2 border-outline-variant w-24 h-12 rounded-bl-lg flex items-end justify-center pb-xs"
+          >
+            <span class="font-label-sm text-[10px] text-outline"
+              >LOG_STREAM</span
+            >
+          </div>
+          <div
+            class="border-r-2 border-b-2 border-outline-variant w-24 h-12 rounded-br-lg flex items-end justify-center pb-xs"
+          >
+            <span class="font-label-sm text-[10px] text-outline"
+              >TELEMETRY</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Technical Deep Dive & Code -->
+  <section class="grid grid-cols-1 lg:grid-cols-2 gap-xl">
+    <div class="space-y-md">
+      <h2 class="font-headline-md text-headline-md text-primary">
+        Technical Deep Dive
+      </h2>
+      <div class="space-y-lg">
+        <div class="border-l border-outline-variant pl-lg">
+          <h3
+            class="font-code-md text-code-md text-on-surface font-bold uppercase tracking-widest mb-xs"
+          >
+            01 // Kernel Optimization
+          </h3>
+          <p class="text-on-surface-variant">
+            We rewrote the standard Softmax implementation in raw CUDA C++ to
+            utilize shared memory banking, reducing warp divergence by 22% and
+            improving overall throughput on A100 architectures.
+          </p>
+        </div>
+        <div class="border-l border-outline-variant pl-lg">
+          <h3
+            class="font-code-md text-code-md text-on-surface font-bold uppercase tracking-widest mb-xs"
+          >
+            02 // Quantization Strategy
+          </h3>
+          <p class="text-on-surface-variant">
+            Implemented 4-bit NormalFloat (NF4) quantization with
+            double-quantized constants, allowing the deployment of 70B parameter
+            models on hardware with only 24GB VRAM.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden flex flex-col h-full"
+    >
+      <div
+        class="bg-surface-container-high px-md py-sm flex items-center justify-between border-b border-outline-variant"
+      >
+        <div class="flex gap-xs">
+          <div
+            class="w-3 h-3 rounded-full bg-red-500/20 border border-red-500/50"
+          ></div>
+          <div
+            class="w-3 h-3 rounded-full bg-yellow-500/20 border border-yellow-500/50"
+          ></div>
+          <div
+            class="w-3 h-3 rounded-full bg-green-500/20 border border-green-500/50"
+          ></div>
+        </div>
+        <span class="font-code-md text-label-sm text-outline"
+          >inference_loop.py</span
+        >
+      </div>
+      <pre
+        class="p-md font-code-md text-code-md overflow-x-auto text-on-surface selection:bg-primary-container/30"
+      ><span class="text-primary">def</span> <span class="text-tertiary">optimize_inference</span>(model, input_tensor):
+    <span class="text-outline"># Apply CUDA graph capture for static shapes</span>
+    <span class="text-secondary">with</span> torch.cuda.graph(g):
+        static_input.copy_(input_tensor)
+        model(static_input)
+    
+    <span class="text-primary">return</span> g.replay()
+
+<span class="text-outline"># Initialize pipeline with NF4</span>
+pipeline = Engine(
+    precision=<span class="text-tertiary">"nf4"</span>,
+    device_map=<span class="text-tertiary">"auto"</span>,
+    kv_cache_opt=<span class="text-primary">True</span>
+)</pre>
+    </div>
+  </section>
+  <!-- Performance Metrics -->
+  <section class="space-y-lg">
+    <h2 class="font-headline-md text-headline-md">Performance Metrics</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+      <div
+        class="bg-surface-container p-lg border border-outline-variant group hover:border-primary transition-colors"
+      >
+        <div class="flex justify-between items-start mb-md">
+          <span class="material-symbols-outlined text-primary">timer</span>
+          <span
+            class="text-primary font-code-md text-[10px] bg-primary/10 px-xs"
+            >-45.2%</span
+          >
+        </div>
+        <p class="font-label-sm text-label-sm text-outline uppercase">
+          Latency
+        </p>
+        <p class="font-headline-lg text-headline-lg text-on-surface">
+          32.4<span class="text-body-md text-outline">ms</span>
+        </p>
+        <div class="mt-md h-8 flex items-end gap-[2px]">
+          <div class="w-full bg-primary/20 h-2"></div>
+          <div class="w-full bg-primary/30 h-4"></div>
+          <div class="w-full bg-primary/40 h-3"></div>
+          <div class="w-full bg-primary/50 h-6"></div>
+          <div class="w-full bg-primary h-8"></div>
+        </div>
+      </div>
+      <div
+        class="bg-surface-container p-lg border border-outline-variant group hover:border-primary transition-colors"
+      >
+        <div class="flex justify-between items-start mb-md">
+          <span class="material-symbols-outlined text-primary">speed</span>
+          <span
+            class="text-primary font-code-md text-[10px] bg-primary/10 px-xs"
+            >+128%</span
+          >
+        </div>
+        <p class="font-label-sm text-label-sm text-outline uppercase">
+          Throughput
+        </p>
+        <p class="font-headline-lg text-headline-lg text-on-surface">
+          2.4<span class="text-body-md text-outline">GB/s</span>
+        </p>
+        <div class="mt-md h-8 flex items-end gap-[2px]">
+          <div class="w-full bg-primary/50 h-5"></div>
+          <div class="w-full bg-primary h-8"></div>
+          <div class="w-full bg-primary/70 h-6"></div>
+          <div class="w-full bg-primary/40 h-4"></div>
+          <div class="w-full bg-primary/60 h-7"></div>
+        </div>
+      </div>
+      <div
+        class="bg-surface-container p-lg border border-outline-variant group hover:border-primary transition-colors"
+      >
+        <div class="flex justify-between items-start mb-md">
+          <span class="material-symbols-outlined text-primary">memory</span>
+          <span
+            class="text-primary font-code-md text-[10px] bg-primary/10 px-xs"
+            >-12.8%</span
+          >
+        </div>
+        <p class="font-label-sm text-label-sm text-outline uppercase">
+          VRAM Usage
+        </p>
+        <p class="font-headline-lg text-headline-lg text-on-surface">
+          18.2<span class="text-body-md text-outline">GB</span>
+        </p>
+        <div class="mt-md h-8 flex items-end gap-[2px]">
+          <div class="w-full bg-primary/20 h-4"></div>
+          <div class="w-full bg-primary/20 h-3"></div>
+          <div class="w-full bg-primary/20 h-4"></div>
+          <div class="w-full bg-primary/20 h-3"></div>
+          <div class="w-full bg-primary/20 h-2"></div>
+        </div>
+      </div>
+      <div
+        class="bg-surface-container p-lg border border-outline-variant group hover:border-primary transition-colors"
+      >
+        <div class="flex justify-between items-start mb-md">
+          <span class="material-symbols-outlined text-primary"
+            >check_circle</span
+          >
+          <span
+            class="text-primary font-code-md text-[10px] bg-primary/10 px-xs"
+            >STABLE</span
+          >
+        </div>
+        <p class="font-label-sm text-label-sm text-outline uppercase">Uptime</p>
+        <p class="font-headline-lg text-headline-lg text-on-surface">
+          99.98<span class="text-body-md text-outline">%</span>
+        </p>
+        <div class="mt-md h-8 flex items-end gap-[2px]">
+          <div class="w-full bg-primary h-8"></div>
+          <div class="w-full bg-primary h-8"></div>
+          <div class="w-full bg-primary h-8"></div>
+          <div class="w-full bg-primary h-8"></div>
+          <div class="w-full bg-primary h-8"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Key Features -->
+  <section
+    class="bg-surface-container-low border border-outline-variant p-lg rounded-xl"
+  >
+    <h2 class="font-headline-md text-headline-md mb-lg">Key Features</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-lg">
+      <div class="flex items-start gap-md">
+        <span class="material-symbols-outlined text-primary mt-1"
+          >chevron_right</span
+        >
+        <div>
+          <p class="font-code-md text-code-md text-on-surface font-bold">
+            Auto-Scaling Infrastructure
+          </p>
+          <p class="text-on-surface-variant text-sm">
+            Dynamic pod orchestration based on real-time inference demand and
+            GPU utilization metrics.
+          </p>
+        </div>
+      </div>
+      <div class="flex items-start gap-md">
+        <span class="material-symbols-outlined text-primary mt-1"
+          >chevron_right</span
+        >
+        <div>
+          <p class="font-code-md text-code-md text-on-surface font-bold">
+            Multi-Modal Support
+          </p>
+          <p class="text-on-surface-variant text-sm">
+            Unified pipeline for simultaneous processing of Vision, Text, and
+            Audio data streams.
+          </p>
+        </div>
+      </div>
+      <div class="flex items-start gap-md">
+        <span class="material-symbols-outlined text-primary mt-1"
+          >chevron_right</span
+        >
+        <div>
+          <p class="font-code-md text-code-md text-on-surface font-bold">
+            Zero-Downtime Deployment
+          </p>
+          <p class="text-on-surface-variant text-sm">
+            Blue-green deployment strategy for AI models with automated A/B
+            testing capability.
+          </p>
+        </div>
+      </div>
+      <div class="flex items-start gap-md">
+        <span class="material-symbols-outlined text-primary mt-1"
+          >chevron_right</span
+        >
+        <div>
+          <p class="font-code-md text-code-md text-on-surface font-bold">
+            Custom Telemetry Dashboard
+          </p>
+          <p class="text-on-surface-variant text-sm">
+            Built-in Prometheus exporter for tracking layer-by-layer compute
+            efficiency and drift.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+{% endblock %}

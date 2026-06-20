@@ -1,0 +1,290 @@
+{% extends "base.html" %} {% block content %}
+<main class="max-w-container-max mx-auto px-gutter">
+  <!-- Hero Section -->
+  <section
+    class="py-xl md:py-32 flex flex-col items-center text-center relative overflow-hidden"
+  >
+    <div
+      class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary/5 via-transparent to-transparent opacity-50 pointer-events-none"
+    ></div>
+    <div class="relative z-10 space-y-md max-w-3xl">
+      <div
+        class="inline-flex items-center space-x-sm px-md py-xs bg-surface-container border border-outline-variant rounded-full text-primary"
+      >
+        <span class="material-symbols-outlined text-[14px]">terminal</span>
+        <span class="font-label-sm text-label-sm tracking-widest uppercase"
+          >Latest Updates</span
+        >
+      </div>
+      <h1 class="font-headline-xl text-headline-xl text-on-surface">
+        Insights on AI, Engineering, and the Future of Work.
+      </h1>
+      <p class="font-body-lg text-body-lg text-on-surface-variant">
+        Exploring the intersection of neural architectures, robust full-stack
+        systems, and the evolving landscape of technical leadership.
+      </p>
+    </div>
+  </section>
+  <!-- Blogs List Section -->
+  <section class="py-xl">
+    <div class="flex flex-col space-y-xl">
+      <!-- Blog Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-lg">
+        <!-- Blog Card 1 -->
+        <article
+          class="group bg-surface-container border border-outline-variant hover:border-primary transition-all duration-300 flex flex-col overflow-hidden h-full"
+        >
+          <div class="aspect-video relative overflow-hidden">
+            <img
+              alt="Large Language Model Architectures"
+              class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
+              data-alt="A high-tech laboratory setting showcasing advanced neural network visualizations on floating holographic screens. The atmosphere is professional and sophisticated, with deep blue and cyber cyan lighting reflecting off metallic surfaces. The visual style is crisp and modern, emphasizing the precision of AI engineering."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6zzxITRzddGeDftcg17q-UZzsDP8D-o6yrJRPI2-neAv3KUesBjtH0HkWnhoSZzHrUL4-pLd4LGNomnxfa3PJWml2z8B5Wd7ESzp63Ev_ZHh1nw8aOPoLfPe1zJFRnGpWTjMZ1O6_o-X0JgU_0PI1vvCgpIjf2SzgdKliXwzTo-QQ1S5k5HCoRrIvAh6b-gtBYTiRYz7ieHk1yhlJT2bsU_kLwVM5WFgFfE4iceuT2Y6NzGzbqrLIrmkX46TT2zIKrV5-fHQ85-s"
+            />
+            <div class="absolute top-md left-md">
+              <span
+                class="bg-surface/80 backdrop-blur-md text-primary font-label-sm text-label-sm px-sm py-xs border border-primary/20"
+                >NEURAL_NETS</span
+              >
+            </div>
+          </div>
+          <div class="p-lg flex flex-col flex-grow">
+            <div class="flex items-center justify-between mb-sm">
+              <span class="font-code-md text-code-md text-on-surface-variant"
+                >2024.10.12</span
+              >
+              <span
+                class="font-code-md text-code-md text-on-surface-variant flex items-center"
+              >
+                <span class="material-symbols-outlined text-sm mr-1"
+                  >schedule</span
+                >
+                8 min read
+              </span>
+            </div>
+            <h3
+              class="font-headline-md text-headline-md text-on-surface mb-md group-hover:text-primary transition-colors"
+            >
+              Scaling Transformers for Real-time Edge Inference
+            </h3>
+            <p
+              class="font-body-md text-body-md text-on-surface-variant mb-xl line-clamp-3"
+            >
+              A deep dive into quantization techniques and architectural
+              optimizations for running heavy LLMs on consumer-grade hardware
+              without latency penalties.
+            </p>
+            <div
+              class="mt-auto flex justify-between items-center border-t border-outline-variant pt-md"
+            >
+              <a
+                class="text-primary font-label-sm text-label-sm flex items-center group-hover:underline"
+                href="#"
+              >
+                READ_FULL_SOURCE
+                <span class="material-symbols-outlined ml-1"
+                  >arrow_forward</span
+                >
+              </a>
+              <span
+                class="material-symbols-outlined text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity"
+                >terminal</span
+              >
+            </div>
+          </div>
+        </article>
+        <!-- Blog Card 2 -->
+        <article
+          class="group bg-surface-container border border-outline-variant hover:border-primary transition-all duration-300 flex flex-col overflow-hidden h-full"
+        >
+          <div class="aspect-video relative overflow-hidden">
+            <img
+              alt="Clean Architecture"
+              class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
+              data-alt="A minimalist IDE interface displayed on a sleek monitor with a dark theme background and syntax highlighting in shades of cyan and slate. The workspace is dimly lit with a soft ambient glow from behind the screen. The focus is on clean, efficient code structure, reflecting a modern engineering aesthetic."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKknGz9UWA531H5-S0bNFZO2IjCcMzpiXt-h8N6a2arNpWlZS68aeNprJiw4S2uLVNe77RwMCdiybhKPhEWzx9bXz8ckSSnkLfrrOhmVWayY9JU7tggj19NWCSMvJnayzburT6i2kHyt2qq6purBO-nDM95VmXxiR_nNv3B4v7-pLlkYd3_FnQnMEwiowUmAcQocsRhMGJItG2wnkuy5mr3MNYYoBspOGkFMfszhB4ngPrGW0ttfVuBGwH23YR1-N5CWHwq6zUJWE"
+            />
+            <div class="absolute top-md left-md">
+              <span
+                class="bg-surface/80 backdrop-blur-md text-primary font-label-sm text-label-sm px-sm py-xs border border-primary/20"
+                >BACKEND_ENG</span
+              >
+            </div>
+          </div>
+          <div class="p-lg flex flex-col flex-grow">
+            <div class="flex items-center justify-between mb-sm">
+              <span class="font-code-md text-code-md text-on-surface-variant"
+                >2024.09.28</span
+              >
+              <span
+                class="font-code-md text-code-md text-on-surface-variant flex items-center"
+              >
+                <span class="material-symbols-outlined text-sm mr-1"
+                  >schedule</span
+                >
+                12 min read
+              </span>
+            </div>
+            <h3
+              class="font-headline-md text-headline-md text-on-surface mb-md group-hover:text-primary transition-colors"
+            >
+              Microservices vs. The AI Monolith: Choosing Your Stack
+            </h3>
+            <p
+              class="font-body-md text-body-md text-on-surface-variant mb-xl line-clamp-3"
+            >
+              Evaluating performance trade-offs between distributed systems and
+              high-density monoliths in the era of GPU-accelerated computing.
+            </p>
+            <div
+              class="mt-auto flex justify-between items-center border-t border-outline-variant pt-md"
+            >
+              <a
+                class="text-primary font-label-sm text-label-sm flex items-center group-hover:underline"
+                href="#"
+              >
+                READ_FULL_SOURCE
+                <span class="material-symbols-outlined ml-1"
+                  >arrow_forward</span
+                >
+              </a>
+              <span
+                class="material-symbols-outlined text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity"
+                >database</span
+              >
+            </div>
+          </div>
+        </article>
+        <!-- Blog Card 3 -->
+        <article
+          class="group bg-surface-container border border-outline-variant hover:border-primary transition-all duration-300 flex flex-col overflow-hidden h-full"
+        >
+          <div class="aspect-video relative overflow-hidden">
+            <img
+              alt="Data Security"
+              class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
+              data-alt="A matrix of data streams cascading down a dark terminal window with vibrant cyan characters. The scene evokes a feeling of high-speed data processing and cybersecurity. The lighting is low-key, focused on the glowing digits, creating a high-contrast technical environment."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9XSviDcqSJ55e21D2E9H5VKm3gBInwOL8WIgYXfo3JY-fqq0V04yRiKWGN4I4RtM4caUrmEuHGbqhrifW4wHg9oPF-EgpZTRrzB2JOGDwuYdgoFqWyUI0Qn5wvoc-qRaeW2kxFwloxrXWPZYxayxscWMxF5Gfma6kH0Ep8qHbArrwtGbKxqSSEZKpIH9_Wn6yfGm8CfXO-Whdb0JqiPTx0FHjBXT2VFI2A-r8vKkKhRNQLIniz57Cz-oHLD77WpIFNFoHf2ksBtw"
+            />
+            <div class="absolute top-md left-md">
+              <span
+                class="bg-surface/80 backdrop-blur-md text-primary font-label-sm text-label-sm px-sm py-xs border border-primary/20"
+                >SECURITY</span
+              >
+            </div>
+          </div>
+          <div class="p-lg flex flex-col flex-grow">
+            <div class="flex items-center justify-between mb-sm">
+              <span class="font-code-md text-code-md text-on-surface-variant"
+                >2024.09.15</span
+              >
+              <span
+                class="font-code-md text-code-md text-on-surface-variant flex items-center"
+              >
+                <span class="material-symbols-outlined text-sm mr-1"
+                  >schedule</span
+                >
+                5 min read
+              </span>
+            </div>
+            <h3
+              class="font-headline-md text-headline-md text-on-surface mb-md group-hover:text-primary transition-colors"
+            >
+              Securing Vector Databases: A Practical Guide
+            </h3>
+            <p
+              class="font-body-md text-body-md text-on-surface-variant mb-xl line-clamp-3"
+            >
+              Ensuring data privacy and preventing prompt injection
+              vulnerabilities in RAG-based enterprise applications.
+            </p>
+            <div
+              class="mt-auto flex justify-between items-center border-t border-outline-variant pt-md"
+            >
+              <a
+                class="text-primary font-label-sm text-label-sm flex items-center group-hover:underline"
+                href="#"
+              >
+                READ_FULL_SOURCE
+                <span class="material-symbols-outlined ml-1"
+                  >arrow_forward</span
+                >
+              </a>
+              <span
+                class="material-symbols-outlined text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity"
+                >shield</span
+              >
+            </div>
+          </div>
+        </article>
+      </div>
+      <!-- Load More Button -->
+      <div class="flex justify-center mt-xl">
+        <button
+          class="flex items-center space-x-sm px-xl py-md bg-surface border border-outline-variant text-on-surface hover:border-primary hover:text-primary transition-all font-code-md"
+        >
+          <span class="material-symbols-outlined">expand_more</span>
+          <span>FETCH_MORE_POSTS</span>
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- CTA Newsletter Section -->
+  <section class="py-xl mb-xl">
+    <div
+      class="bg-surface-container-high border border-outline-variant p-lg md:p-xl relative overflow-hidden group"
+    >
+      <div
+        class="absolute top-0 right-0 w-32 h-32 bg-primary/10 blur-[60px] group-hover:bg-primary/20 transition-all duration-700"
+      ></div>
+      <div
+        class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-xl items-center"
+      >
+        <div class="space-y-md">
+          <h2 class="font-headline-lg text-headline-lg text-on-surface">
+            Stay Synced with the Stack
+          </h2>
+          <p class="font-body-lg text-body-lg text-on-surface-variant">
+            Get weekly deep dives into production-ready AI, system design
+            patterns, and exclusive code snippets delivered to your terminal.
+          </p>
+        </div>
+        <div>
+          <form
+            class="flex flex-col md:flex-row gap-md"
+            onsubmit="
+              event.preventDefault();
+              alert('Subscribed successfully.');
+            "
+          >
+            <div class="flex-grow relative">
+              <span
+                class="material-symbols-outlined absolute left-md top-1/2 -translate-y-1/2 text-outline"
+                >alternate_email</span
+              >
+              <input
+                class="w-full bg-background border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary rounded pl-12 pr-md py-md text-on-surface font-code-md outline-none transition-all"
+                placeholder="dev@domain.com"
+                required=""
+                type="email"
+              />
+            </div>
+            <button
+              class="bg-primary text-on-primary font-bold px-xl py-md rounded hover:opacity-90 active:scale-95 transition-all font-label-sm text-label-sm whitespace-nowrap"
+              type="submit"
+            >
+              INITIALIZE_SUBSCRIPTION
+            </button>
+          </form>
+          <p
+            class="font-label-sm text-label-sm text-outline mt-md flex items-center"
+          >
+            <span class="material-symbols-outlined text-[12px] mr-1">lock</span>
+            Zero spam. Only high-signal technical content.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+{% endblock %}
